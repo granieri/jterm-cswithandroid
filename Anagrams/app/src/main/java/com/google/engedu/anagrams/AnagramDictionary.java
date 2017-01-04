@@ -46,16 +46,14 @@ public class AnagramDictionary {
         String line;
         while((line = in.readLine()) != null) {
             String word = line.trim();
-            //
-            //  Your code here
-            //
+            wordList.add(word);
         }
     }
 
     public boolean isGoodWord(String word, String base) {
-        //
-        // Your code here
-        //
+        if((word.length() + 1) != base.length()) return false;
+        for(int i = 0; i<base.length();i++){
+        }
         return true;
     }
 
